@@ -1,3 +1,22 @@
----
-- debug:
-    msg: "Funcionando"
+    ---
+      - name: copia o script python de teste das portas
+        copy:
+            src: 'roles/prepare/templates/server.py'
+            dest: '/tmp'
+            owner: xvia
+            group: xvia
+            mode: 0777
+
+      - name: instala o servico de monitoramento de portas
+        copy:
+            src: 'roles/prepare/templates/xroad-scanner.service'
+            dest: '/etc/systemd/system'
+            owner: xvia
+            group: xvia
+            mode: 0777
+
+      - name: inicializa o servico de monitoramento de portas
+        service:
+            name: 'xroad-scanner'
+            state: started
+            state: restarted

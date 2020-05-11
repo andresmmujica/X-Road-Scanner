@@ -2,7 +2,7 @@ import http.server
 import socketserver
 import threading
 
-PORTS = [8080, 8081, 8082]
+PORTS = [22, 25, 80, 443, 4000, 4001, 4002, 5000, 5500, 5432, 5433, 5577, 8888, 9988, 9011,  9999, 27017]
 Handler = http.server.SimpleHTTPRequestHandler
 
 def create_server(port):
@@ -15,3 +15,4 @@ def create_server(port):
 
 for port in PORTS:
     threading.Thread(target=create_server, args=[port]).start()
+
