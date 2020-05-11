@@ -7,8 +7,8 @@
   roles:
     - prepare
 
-- hosts: central
+- hosts: cs_server
   become: yes
   become_user: root
   roles:
-    - central
+    - cs_server

@@ -1,0 +1,7 @@
+---
+- name: Porta de saída (do servidor central para a rede externa)
+  uri:
+    url: 'http://google.com:80'
+
+
+

@@ -1,6 +1,8 @@
-# Hosts file
-[central]
+[cs_server]
+127.0.0.1
 
-[servidor_seguro]
+[ss_server]
+127.0.0.1
 
-[ca]
+[ca_server]
+127.0.0.1

@@ -1,8 +1,0 @@
----
-- name: executar teste de comunicacao via telnet 
-  uri:
-    url: 'http://192.168.241.3:80'
-
-    
-
- 
