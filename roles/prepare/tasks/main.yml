@@ -16,7 +16,8 @@
       mode: 0777
 
 - name: inicializa o servico de monitoramento de portas
-  service:
-      name: 'xroad-scanner'
-      state: started
-      state: restarted
+  systemd:
+    state: restarted
+    name: 'xroad-scanner'
+    daemon_reload: yes
+    
