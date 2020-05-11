@@ -1,0 +1,8 @@
+    ---
+      - name: executar teste de comunicacao via telnet 
+        telnet:
+            host: '192.168.241.3'
+            port: 80
+            
+
+ 

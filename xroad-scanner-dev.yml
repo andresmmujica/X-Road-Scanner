@@ -6,3 +6,9 @@
   become_user: root
   roles:
     - prepare
+
+- hosts: central
+  become: yes
+  become_user: root
+  roles:
+    - central
