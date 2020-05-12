@@ -1,8 +1,12 @@
 [cs_server]
-127.0.0.1
+xxx.xxx.xxx.x
 
 [ss_server]
-127.0.0.1
-
+xxx.xxx.xxx.x
+xxx.xxx.xxx.x
+xxx.xxx.xxx.xx
+xxx.xxx.xxx.xx
+xxx.xxx.xxx.xx
+xxx.xxx.xxx.xx
 [ca_server]
-127.0.0.1
+xxx.xxx.xxx.x
