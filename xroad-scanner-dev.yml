@@ -13,7 +13,7 @@
   roles:
     - cs_server
 
-  - hosts: ss_server
+- hosts: ss_server
   become: yes
   become_user: root
   roles:
