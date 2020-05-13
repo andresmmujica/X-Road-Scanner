@@ -3,7 +3,26 @@
   uri:
     url: 'http://localhost:2080'
 
-- name: [5500] Servidor seguro -> Servidor seguro
+- name: [5500] Servidor seguro -> Troca de mensagens entre os servidores seguros.
   uri:
     url: 'http://{{ item }}:5500'
   with_items: groups['ss_server']
+
+- name: [5577] -> Consulta ao cache das respostas de OCSP.
+  uri:
+    url: 'http://{{ item }}:5577'
+  with_items: groups['ss_server']
+
+- name: [4001] -> Comunicação com o servidor central
+  uri:
+    url: 'http://{{ item }}:4001'
+  with_items: groups['ss_server']
+
+  - name: [443] -> Serviços de OCSP e carimbo de tempo mais comuns
+  uri:
+    url: 'http://{{ item }}:443'
+  with_items: groups['ss_server']
+
+  
+
+
