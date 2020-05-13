@@ -1,9 +1,9 @@
 ---
-- name: [2080] Servidor seguro -> monitoramento operacional (localhost por padrão)
+- name: (2080) Servidor seguro -> monitoramento operacional (localhost por padrão)
   uri:
     url: 'http://localhost:2080'
 
-- name: [5500] Servidor seguro -> Servidor seguro
+- name: (5500) Servidor seguro -> Servidor seguro
   uri:
     url: 'http://{{ item }}:5500'
   with_items: groups['ss_server']
