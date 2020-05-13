@@ -1,7 +1,125 @@
 ---
-- name: Porta de saída (do servidor central para a rede externa)
-  uri:
-    url: 'http://google.com:80'
+ - name: Porta de saída (do servidor seguro para a rede externa)
+   uri:
+    url: 'http://192.168.241.10:80'
 
+ - name: Porta de saída (do servidor seguro para a rede externa)
+   uri:
+    url: 'http://192.168.241.10:443'
+
+ - name: Porta de saída (do servidor seguro para a rede externa)
+   uri:
+    url: 'http://192.168.241.10:5500'
+
+ - name: Porta de saída (do servidor seguro para a rede externa)
+   uri:
+    url: '192.168.241.10:5577'
+
+ - name: Porta de saída (do servidor seguro para a rede externa)
+   uri:
+    url: 'http://192.168.241.10:4001'
+
+ - name: Porta de saída (do servidor seguro para a rede interna)
+   uri:
+    url: 'http://192.168.241.10:2080'
+
+
+
+- name: Porta de saída (do servidor seguro para a rede externa)
+  uri:
+    url: 'http://192.168.241.11:80'
+
+ - name: Porta de saída (do servidor seguro para a rede externa)
+   uri:
+    url: 'http://192.168.241.11:443'
+
+- name: Porta de saída (do servidor seguro para a rede externa)
+  uri:
+    url: 'http://192.168.241.11:5500'
+
+ - name: Porta de saída (do servidor seguro para a rede externa)
+   uri:
+    url: '192.168.241.11:5577'
+
+ - name: Porta de saída (do servidor seguro para a rede externa)
+   uri:
+    url: 'http://192.168.241.11:4001'
+
+ - name: Porta de saída (do servidor seguro para a rede interna)
+   uri:
+    url: 'http://192.168.241.11:2080'
+
+- name: Porta de saída (do servidor seguro para a rede externa)
+  uri:
+    url: 'http://192.168.241.12:80'
+
+ - name: Porta de saída (do servidor seguro para a rede externa)
+   uri:
+    url: 'http://192.168.241.12:443'
+
+ - name: Porta de saída (do servidor seguro para a rede externa)
+   uri:
+    url: 'http://192.168.241.12:5500'
+
+ - name: Porta de saída (do servidor seguro para a rede externa)
+   uri:
+    url: '192.168.241.12:5577'
+
+ - name: Porta de saída (do servidor seguro para a rede externa)
+   uri:
+    url: 'http://192.168.241.12:4001'
+
+ - name: Porta de saída (do servidor seguro para a rede interna)
+   uri:
+    url: 'http://192.168.241.12:2080'
+
+
+- name: Porta de saída (do servidor seguro para a rede externa)
+  uri:
+    url: 'http://192.168.241.13:80'
+
+ - name: Porta de saída (do servidor seguro para a rede externa)
+   uri:
+    url: 'http://192.168.241.13:443'
+
+ - name: Porta de saída (do servidor seguro para a rede externa)
+   uri:
+    url: 'http://192.168.241.13:5500'
+
+ - name: Porta de saída (do servidor seguro para a rede externa)
+   uri:
+    url: '192.168.241.13:5577'
+
+ - name: Porta de saída (do servidor seguro para a rede externa)
+   uri:
+    url: 'http://192.168.241.13:4001'
+
+ - name: Porta de saída (do servidor seguro para a rede interna)
+   uri:
+    url: 'http://192.168.241.13:2080'
+
+- name: Porta de saída (do servidor seguro para a rede externa)
+  uri:
+    url: 'http://192.168.241.14:80'
+
+ - name: Porta de saída (do servidor seguro para a rede externa)
+   uri:
+    url: 'http://192.168.241.14:443'
+
+ - name: Porta de saída (do servidor seguro para a rede externa)
+   uri:
+    url: 'http://192.168.241.14:5500'
+
+ - name: Porta de saída (do servidor seguro para a rede externa)
+   uri:
+    url: '192.168.241.14:5577'
+
+ - name: Porta de saída (do servidor seguro para a rede externa)
+   uri:
+    url: 'http://192.168.241.14:4001'
+
+ - name: Porta de saída (do servidor seguro para a rede interna)
+   uri:
+    url: 'http://192.168.241.14:2080'
 
 
