@@ -1,5 +1,5 @@
 [Unit]
-Description=X-Road Network Scanner Service
+Description=X-Road-Scanner Service
 
 [Service]
 Type=simple
