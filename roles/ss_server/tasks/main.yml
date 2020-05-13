@@ -6,4 +6,4 @@
 - name: (5500) Servidor seguro -> Servidor seguro
   uri:
     url: 'http://{{ item }}:5500'
-  with_items: groups['ss_server']
+  with_items: {{ groups['ss_server'] }}
