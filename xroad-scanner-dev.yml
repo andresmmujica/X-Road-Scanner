@@ -18,4 +18,9 @@
   become_user: root
   roles:
     - ss_server
-  
+
+- hosts: all
+  become: yes
+  become_user: root
+  roles:
+    - clean
