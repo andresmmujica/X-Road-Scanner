@@ -1,0 +1,28 @@
+---
+# This playbook installs an X-Road v6 monitor environment to the defined host inventory from a remote package repository
+- name: Test single instances
+  import_playbook: cs_cluster/xroad_scanner.yml
+
+- hosts: all
+  become: yes
+  become_user: root
+  roles:
+    - prepare
+
+- hosts: cs_server
+  become: yes
+  become_user: root
+  roles:
+    - cs_replica
+
+- hosts: cs_database
+  become: yes
+  become_user: root
+  roles:
+    - cs_database
+
+- hosts: all
+  become: yes
+  become_user: root
+  roles:
+    - clean
