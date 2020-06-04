@@ -1,9 +1,9 @@
 ---
-- name: Porta de saída (do servidor seguro para a internet via http)
+- name: Porta de saida (do servidor central para a internet via http)
   uri:
     url: 'http://google.com'
 
-- name: Porta de saída (do servidor seguro para a internet via https)
+- name: Porta de saída (do servidor central para a internet via https)
   uri:
     url: 'https://google.com'
 

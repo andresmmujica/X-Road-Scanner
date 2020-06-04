@@ -6,10 +6,10 @@
 
 - name: Remove the script file
   file:
-    path: 'roles/prepare/templates/server.py'
+    path: '/tmp/server.py'
     state: absent
 
 - name: Uninstall the scanner service
   file:
-    path: 'roles/prepare/templates/xroad-scanner.service'
+    path: '/etc/systemd/system/xroad-scanner.service'
     state: absent

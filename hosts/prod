@@ -1,16 +1,13 @@
 [cs_server]
-xxx.xxx.xxx.x
+34.66.144.118
+104.154.176.114
 
 [cs_database]
-xxx.xxx.xxx.x
+104.154.95.13
+35.239.124.36
 
 [ss_server]
-xxx.xxx.xxx.x
-xxx.xxx.xxx.x
-xxx.xxx.xxx.xx
-xxx.xxx.xxx.xx
-xxx.xxx.xxx.xx
-xxx.xxx.xxx.xx
+35.192.59.177
+35.232.190.72
 
 [ca_server]
-xxx.xxx.xxx.x
