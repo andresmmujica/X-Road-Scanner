@@ -1,0 +1,15 @@
+---
+- name: Stop the scanner service
+  systemd:
+    state: stopped
+    name: 'xroad-scanner'
+
+- name: Remove the script file
+  file:
+    path: 'roles/prepare/templates/server.py'
+    state: absent
+
+- name: Uninstall the scanner service
+  file:
+    path: 'roles/prepare/templates/xroad-scanner.service'
+    state: absent

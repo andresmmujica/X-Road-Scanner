@@ -1,0 +1,43 @@
+---
+- name: (2080) Servidor seguro -> monitoramento operacional (localhost por padrão)
+  uri:
+    url: 'http://localhost:2080'
+
+- name: (5500) Troca de mensagens entre os servidores seguros 
+  uri:
+    url: 'http://{{ item }}:5500'
+  loop: "{{ groups['ss_server'] }}"
+
+- name: (5577) Consulta ao cache das respostas de OCSP entre os servidores seguros 
+  uri:
+    url: 'http://{{ item }}:5577'
+  loop: "{{ groups['ss_server'] }}"
+
+- name: (4001) Comunicação com o servidor central 
+  uri:
+    url: 'http://{{ item }}:4001'
+  loop: "{{ groups['cs_server'] }}"
+
+- name: (443) Serviços de OCSP e carimbo de tempo mais comuns
+  uri:
+    url: 'http://{{ item }}:443' 
+  loop: "{{ groups['ca_server'] }}"
+
+- name: (80) Download do arquivo de configuração global do servidor central
+  uri:
+    url: 'http://{{ item }}:80' 
+  loop: "{{ groups['cs_server'] }}"
+
+- name: (80) Serviços de OCSP e carimbo de tempo mais comuns
+  uri:
+    url: 'http://{{ item }}:80' 
+  loop: "{{ groups['ca_server'] }}"
+
+- name: Porta de saída (do servidor seguro para a internet via http)
+  uri:
+    url: 'http://google.com'
+
+- name: Porta de saída (do servidor seguro para a internet via https)
+  uri:
+    url: 'https://google.com' 
+

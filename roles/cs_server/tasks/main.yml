@@ -1,0 +1,15 @@
+---
+- name: Porta de saída (do servidor seguro para a internet via http)
+  uri:
+    url: 'http://google.com'
+
+- name: Porta de saída (do servidor seguro para a internet via https)
+  uri:
+    url: 'https://google.com'
+
+- name: (5432) Should communicate with the database servers
+  uri:
+    url: 'http://{{ item }}:5432'
+  loop: "{{ groups['cs_database'] }}"
+
+

@@ -1,0 +1,9 @@
+---
+- name: (5432) Should be able to connect to the database instances
+  uri:
+    url: 'http://{{ item }}:5432'
+  loop: "{{ groups['cs_database'] }}"
+
+
+
+
